@@ -5,7 +5,7 @@ using Microsoft.MixedReality.Toolkit.UI;
 using TMPro;
 using UnityEngine;
 /**StationTrajectoryCOntoller 噴漆站點控制器
- * 簡述：基座位置選定頁面的UI控制、所有噴漆站點的資料處理
+ * 簡述：基座位置選定頁面(StationTrajectoryPanel)的UI控制、所有噴漆站點的資料處理
  * 使用方式：
  * 腳本放入GameEvents底下
  * _StationTrajectoryPanel放入基座位置選定頁面的物件

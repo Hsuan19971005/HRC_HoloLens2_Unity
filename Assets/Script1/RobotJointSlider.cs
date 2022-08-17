@@ -5,16 +5,18 @@ using UnityEngine.UI;
 using Microsoft.MixedReality.Toolkit.UI;
 using TMPro;
 using System;
-
+/**RobotJointSlider 機器人關節滑桿
+ * 簡述：機器人控制頁面的滑桿控制，控制與反應機器人的關節狀態
+ * 使用方式：
+ * 腳本放入機器人控制頁面的滑桿物件中
+ * link放入虛擬機器人的關節Link，注意每個Link都須具有ArticulationBody元件
+ * _textMesh放入滑桿旁的文字物件
+ */
 public class RobotJointSlider : MonoBehaviour
 {
     [SerializeField]
     public ArticulationBody link;
     public TextMesh _textMesh;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
     void Update()
     {
         //Update Slider Value

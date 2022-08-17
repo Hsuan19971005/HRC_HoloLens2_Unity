@@ -9,7 +9,7 @@ using System;
 using System.Linq;
 using RosMessageTypes.Trajectory;
 /**TrajectoryPlanner 軌跡任務規劃器
- * 簡述：任務清單規劃頁面的UI控制、單一噴漆站點任務指令的產生與資料處理
+ * 簡述：任務清單規劃頁面(TrajectoryPlanningPanel)的UI控制、單一噴漆站點任務指令的產生與資料處理
  * 使用方式：
  * 腳本放入GameEvents底下
  * _TrajectoryPlanningPanel放入任務清單規劃頁面的物件
@@ -61,7 +61,6 @@ public class TrajectoryPlanner : MonoBehaviour
         GameEvents.current.actionInitializeTrajectoryPlanningPanel += InitializeTrajectoryPlanningPanel;
         GameEvents.current.actionSetRespondTrajectory += SetRespondTrajectory;
     }
-
     void Update()
     {
         this._speed_text.text = Math.Round(this._speed_slider.value, 2).ToString();
